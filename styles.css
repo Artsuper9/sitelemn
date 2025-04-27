@@ -98,5 +98,17 @@
   margin: 0 auto;
   display: block;
   border-radius: 8px;
+
+    .bio-image {
+  text-align: center;
+  margin: 2rem 0;
+}
+.bio-image img {
+  max-width: 400px;   /* максимальная ширина */
+  width: 100%;
+  height: auto;
+  border-radius: 8px; /* по желанию скругление */
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
   box-shadow: 0 4px 6px rgba(0,0,0,0.1);
 }
