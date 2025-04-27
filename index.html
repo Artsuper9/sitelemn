@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PergoleArt</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav>
+    <div class="logo">PergoleArt</div>
+    <ul class="nav-links">
+      <li><a href="#">Acasă</a></li>
+      <li><a href="#about">Despre Noi</a></li>
+      <li><a href="#produse">Produse</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="cart">
+      <img src="aaa.jpg" alt="Coș" />
+      <span id="cart-count">0</span>
+    </div>
+  </nav>
+
+  <!-- Bio section placed immediately after nav -->
+  <section id="about" class="bio-section">
+    <div class="container bio-content">
+      <h2>Despre Noi</h2>
+      <p class="bio-quote">
+        Serbenco Alexandru este un artist cu o experiență bogată și un parcurs impresionant în domeniul artei. Între anii 1986–1990 a studiat la Colegiul de Arte „Repin” din Chișinău, iar apoi la Academia de Arte „G. Enescu” din Iași (1990–1996). În perioada 2000–2007 a activat în domeniul designului de grădini și spații comerciale în orașul Cremona. Din 2015, Alexandru își îndreaptă atenția către sculptura în lemn, realizând lucrări autentice care reflectă măiestria și sensibilitatea sa artistică.
+      </p>
+    </div>
+  </section>
+
+  <!-- Hero remains below biography for visual balance -->
+  <header class="hero">
+    <div class="hero-content">
+      <h1>Transformă-ți grădina cu PergoleArt</h1>
+      <p>Produse hand-crafted, durabile și estetice pentru orice spațiu exterior</p>
+      <a href="#produse" class="btn btn-primary">Vezi produse</a>
+    </div>
+  </header>
+
+  <!-- Rest of site unchanged -->
+  <section class="filters" id="filters">
+    <button class="filter-btn active" data-filter="all">Toate</button>
+    <button class="filter-btn" data-filter="pergola">Pergole</button>
+    <button class="filter-btn" data-filter="foisor">Foișoare</button>
+  </section>
+
+  <section class="products container" id="produse">
+    <div class="grid"></div>
+  </section>
+
+  <section id="promo-video" class="container video-section">
+    <h2>Video Prezentare</h2>
+    <video autoplay muted loop playsinline width="100%">
+      <source src="videopergola.mp4" type="video/mp4" />
+      Browserul tău nu suportă elementul video.
+    </video>
+  </section>
+
+  <!-- Modal pentru detaliu produs -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <img id="modal-img" src="" alt="" />
+      <h3 id="modal-title"></h3>
+      <p id="modal-desc"></p>
+      <div class="modal-actions">
+        <button id="modal-add" class="btn">Adaugă în coș</button>
+        <button id="modal-buy" class="btn">Cumpără</button>
+      </div>
+    </div>
+  </div>
+
+  <section id="contact" class="container contact">
+    <h2>Contact</h2>
+    <form id="contact-form">
+      <label for="name">Nume:</label>
+      <input type="text" id="name" name="name" required />
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <label for="message">Mesaj:</label>
+      <textarea id="message" name="message" rows="4" required></textarea>
+      <button type="submit" class="btn btn-primary">Trimite</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 PergoleArt. Toate drepturile rezervate.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
